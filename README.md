@@ -426,22 +426,19 @@ projet_hospital/
 └── 📁 docs/
     ├── screenshots/                ← Captures d'écran
     │   ├── dashboard_overview.png
-    │   ├── kpis.png
-    │   ├── insights.png
-    │   └── exports.png
-    └── ARCHITECTURE.md             ← Documentation technique
+    │  
 ```
 
 ---
 
-## 🎓 Contexte Académique
+## 🎓 Contexte Académique et professionelle
 
 ### **Formation**
 
-- 🎓 **Master 2 Big Data & Data Strategy**
+- 🎓 **Master 2 Big Data & Data Stratégie**
 - 📚 **Module** : Data Visualization (Dash & Flask)
-- 📅 **Période** : Décembre 2024 - Janvier 2025
-- 🏫 **Institution** : [Nom de votre université]
+- 📅 **Période** : Décembre 2025 - Janvier 2026
+- 🏫 **Institution** : ISM
 
 ### **Compétences Démontrées**
 
@@ -503,18 +500,18 @@ Les contributions sont les bienvenues ! Pour contribuer :
 
 ## 👨‍💻 Auteur
 
-**[Votre Nom]**
+**[Sona KOULIBALY]**
 
 - 🎓 Master 2 Big Data & Data Strategy
-- 💼 [LinkedIn](https://linkedin.com/in/votre-profil) · 🐙 [GitHub](https://github.com/votre-username)
-- 📧 votre.email@example.com
+- 💼 [LinkedIn] https://www.linkedin.com/in/sona-koulibaly/ · 🐙 [GitHub] https://github.com/SonaKoulibaly
+- 📧 sonakoul.pro@gmail.com
 - 🌍 Dakar, Sénégal
 
 ### **Autres Projets**
 
-- 📊 [Projet Machine Learning](https://github.com/votre-username/projet-ml)
-- 🤖 [Chatbot IA](https://github.com/votre-username/chatbot-ia)
-- 🌐 [API REST FastAPI](https://github.com/votre-username/api-rest)
+- 📊 [Projet Machine Learning] à voir sur mon github.
+- 🤖 [Chatbot IA] en cours de realisation en locales.
+- 🌐 [API REST FastAPI] à voir sur mon github.
 
 ---
 
@@ -526,10 +523,9 @@ Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus
 
 ## 🙏 Remerciements
 
-- **Anthropic Claude** pour l'assistance IA au développement
 - **Plotly & Dash Community** pour la documentation exceptionnelle
-- **Master Big Data & Data Strategy** pour l'encadrement académique
-- **OpenAI/Anthropic** pour les outils d'IA générative
+- **Master 2 Big Data & Data Stratégie** pour l'encadrement académique
+  
 
 ---
 
@@ -599,7 +595,7 @@ Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus
 - [Insights Clés](#-insights-clés)
 - [Captures d'Écran](#-captures-décran)
 - [Contribution](#-contribution)
-- [Auteur](#-auteur)
+- [Auteur](#Sona KOULIBALY)
 - [Licence](#-licence)
 
 ---
@@ -612,7 +608,7 @@ Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus
 
 Projet réalisé dans le cadre du **Master 2 Big Data & Data Strategy** - Module Data Visualization (Dash & Flask)
 
-**Période** : Décembre 2024 - Janvier 2025
+**Période** : Décembre 2025- Janvier 2026
 
 ---
 
@@ -804,12 +800,9 @@ projet_hospital/
 │   └── logo.png                    # Logo DATA CARE
 │
 └── 📁 docs/
-    ├── GUIDE_UTILISATEUR.md        # Guide détaillé
-    ├── ARCHITECTURE.md             # Documentation technique
-    └── screenshots/                # Captures d'écran
+    └── screenshots/            # Captures d'écran
         ├── dashboard_overview.png
-        ├── kpis.png
-        └── filters.png
+        
 ```
 
 ---
@@ -893,13 +886,13 @@ Les contributions sont les bienvenues ! Pour contribuer :
 
 ---
 
-## 👨‍💻 Auteur
+## 👨‍💻 Auteur:
 
-**Votre Nom**
-- 🎓 Master 2 Big Data & Data Strategy
-- 💼 LinkedIn : [votre-profil](https://linkedin.com/in/votre-profil)
-- 🐙 GitHub : [@votre-username](https://github.com/votre-username)
-- 📧 Email : votre.email@example.com
+**Sona KOULIBALY**
+- 🎓 Master 2 Big Data & Data Stratégie
+- 💼 LinkedIn : https://www.linkedin.com/in/sona-koulibaly/
+- 🐙 GitHub : https://github.com/SonaKoulibaly
+- 📧 Email : sonakoul.pro@gmail.com
 
 ---
 
@@ -911,9 +904,9 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ## 🙏 Remerciements
 
-- **Anthropic Claude** pour l'assistance au développement
+
 - **Plotly & Dash Community** pour la documentation
-- **Master Big Data & Data Strategy** pour l'encadrement académique
+- **Master 2 Big Data & Data Stratégie** pour l'encadrement académique
 
 ---
 
