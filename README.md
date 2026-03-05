@@ -977,4 +977,5 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 <p align="center">
   ⭐ N'oubliez pas de mettre une étoile si ce projet vous a plu !
+
 </p>
