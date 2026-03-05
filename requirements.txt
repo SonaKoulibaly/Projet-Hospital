@@ -1,0 +1,25 @@
+# ============================================================
+# requirements.txt - DATA CARE
+# Compatible Render (Python 3.12)
+# ============================================================
+
+# Framework principal
+dash>=2.14
+dash-bootstrap-components>=1.5
+
+# Données
+pandas>=2.0,<4.0
+numpy>=1.24
+openpyxl>=3.0.0
+
+# Visualisation
+plotly>=5.18
+
+# Export PDF
+reportlab>=4.0.0
+
+# Serveur WSGI pour Render (obligatoire en production)
+gunicorn>=21.0.0
+
+# Variables d'environnement (pour développement local)
+python-dotenv>=1.0.0

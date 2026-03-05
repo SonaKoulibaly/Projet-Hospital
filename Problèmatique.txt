@@ -1,0 +1,22 @@
+Analyse des données hospitalières avec Dash & Plotly:
+
+Contexte:
+Une base de données hospitalière contient des informations sur les patients, la durée de leur séjour, les maladies traitées et les coûts associés. L’objectif est de créer une application interactive Dash permettant de visualiser et analyser ces données pour répondre à plusieurs questions clés de gestion hospitalière.
+
+Base de données utilisées : hospital_data.csv
+
+Objectif du TP
+
+Créer un dashboard interactif qui permet :
+1. D’identifier les départements hospitaliers qui génèrent les coûts les plus élevés.
+2. D’analyser la relation entre durée d’hospitalisation et coût.
+3. De déterminer quelles maladies nécessitent les séjours les plus longs.
+4. D’étudier la répartition hommes/femmes pour chaque maladie.
+A faire : Ajouter un bouton de téléchargement, permettant de télécharger la base de données de l’étude en csv.
+Questions analytiques
+1. Quels départements coûtent le plus ? Pourquoi ?
+2. La durée de séjour influence-t-elle le coût ? Justifiez.
+3. Quelles maladies génèrent les séjours les plus longs ?
+4. La répartition hommes/femmes est-elle équilibrée pour la maladie sélectionnée ?
+5. Proposez une amélioration du dashboard
+
