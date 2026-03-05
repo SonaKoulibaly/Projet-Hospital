@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: data-care-dashboard
+    runtime: python
+    region: frankfurt
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:server --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true        # Render génère automatiquement une clé sécurisée
+      - key: DEBUG
+        value: "False"
+      - key: FLASK_ENV
+        value: production
+      - key: PYTHON_VERSION
+        value: "3.12.0"
