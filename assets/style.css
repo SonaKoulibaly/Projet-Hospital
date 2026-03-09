@@ -114,12 +114,12 @@ body {
 .logo-img {
     height: 72px;
     width: auto;
-    filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.20));
     transition: var(--transition);
 }
 .logo-img:hover {
     transform: scale(1.04);
-    filter: brightness(0) invert(1) drop-shadow(0 4px 16px rgba(0,0,0,0.3));
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,0.30));
 }
 
 .header-text { flex: 1; }
