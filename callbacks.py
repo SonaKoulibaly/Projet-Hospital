@@ -254,9 +254,9 @@ def register_callbacks(app, df):
             insights_html = [html.P("Aucun insight particulier pour cette sélection.", 
                                    className='text-muted text-center')]
         
-        # Couleurs modernes
-        color_palette = ['#667eea', '#764ba2', '#f093fb', '#4facfe', '#43e97b', 
-                        '#fa709a', '#fee140', '#30cfd0', '#a8edea', '#fed6e3']
+        # Palette Clinique Naturelle — Vert forêt · Or boisé · Sage · Argile
+        color_palette = ['#0E6B45', '#B8860B', '#4A7C59', '#8B4513', '#1A8055',
+                        '#E8A320', '#6B9E78', '#A0522D', '#0B4D32', '#D4A843']
         
         # Graphiques (code identique à avant)
         # 1. Département
@@ -275,9 +275,9 @@ def register_callbacks(app, df):
             showlegend=False,
             plot_bgcolor='rgba(0,0,0,0)',
             paper_bgcolor='rgba(0,0,0,0)',
-            font=dict(color='#2d3748', size=12),
+            font=dict(color='#3D5247', size=12),
             xaxis=dict(showgrid=False),
-            yaxis=dict(showgrid=True, gridcolor='#e2e8f0'),
+            yaxis=dict(showgrid=True, gridcolor='#E8E0D5'),
             margin=dict(l=20, r=20, t=20, b=20),
             height=300
         )
@@ -299,7 +299,7 @@ def register_callbacks(app, df):
             showlegend=True,
             plot_bgcolor='rgba(0,0,0,0)',
             paper_bgcolor='rgba(0,0,0,0)',
-            font=dict(color='#2d3748', size=12),
+            font=dict(color='#3D5247', size=12),
             margin=dict(l=20, r=20, t=20, b=20),
             height=300
         )
@@ -326,8 +326,8 @@ def register_callbacks(app, df):
             showlegend=False,
             plot_bgcolor='rgba(0,0,0,0)',
             paper_bgcolor='rgba(0,0,0,0)',
-            font=dict(color='#2d3748', size=12),
-            xaxis=dict(showgrid=True, gridcolor='#e2e8f0', title='Coût Moyen (€)'),
+            font=dict(color='#3D5247', size=12),
+            xaxis=dict(showgrid=True, gridcolor='#E8E0D5', title='Coût Moyen (€)'),
             yaxis=dict(showgrid=False, title=''),
             margin=dict(l=20, r=20, t=20, b=20),
             height=300
@@ -350,9 +350,9 @@ def register_callbacks(app, df):
             showlegend=False,
             plot_bgcolor='rgba(0,0,0,0)',
             paper_bgcolor='rgba(0,0,0,0)',
-            font=dict(color='#2d3748', size=12),
+            font=dict(color='#3D5247', size=12),
             xaxis=dict(showgrid=False, title=''),
-            yaxis=dict(showgrid=True, gridcolor='#e2e8f0', title='Durée Moyenne (jours)'),
+            yaxis=dict(showgrid=True, gridcolor='#E8E0D5', title='Durée Moyenne (jours)'),
             margin=dict(l=20, r=20, t=20, b=20),
             height=300
         )
@@ -364,16 +364,16 @@ def register_callbacks(app, df):
             x='Age',
             color='Sexe',
             nbins=20,
-            color_discrete_map={'M': '#667eea', 'F': '#f093fb'},
+            color_discrete_map={'M': '#0E6B45', 'F': '#B8860B'},
             title=""
         )
         fig_age_gender.update_layout(
             showlegend=True,
             plot_bgcolor='rgba(0,0,0,0)',
             paper_bgcolor='rgba(0,0,0,0)',
-            font=dict(color='#2d3748', size=12),
+            font=dict(color='#3D5247', size=12),
             xaxis=dict(showgrid=False, title='Âge'),
-            yaxis=dict(showgrid=True, gridcolor='#e2e8f0', title='Nombre de patients'),
+            yaxis=dict(showgrid=True, gridcolor='#E8E0D5', title='Nombre de patients'),
             legend=dict(title='Sexe', orientation='h', yanchor='bottom', y=1.02, xanchor='right', x=1),
             margin=dict(l=20, r=20, t=40, b=20),
             height=300,
@@ -392,18 +392,18 @@ def register_callbacks(app, df):
             title=""
         )
         fig_monthly.update_traces(
-            line_color='#667eea',
+            line_color='#0E6B45',
             line_width=3,
-            marker=dict(size=8, color='#764ba2'),
+            marker=dict(size=8, color='#B8860B'),
             hovertemplate='<b>%{x}</b><br>Admissions: %{y}<extra></extra>'
         )
         fig_monthly.update_layout(
             showlegend=False,
             plot_bgcolor='rgba(0,0,0,0)',
             paper_bgcolor='rgba(0,0,0,0)',
-            font=dict(color='#2d3748', size=12),
+            font=dict(color='#3D5247', size=12),
             xaxis=dict(showgrid=False, title='Mois'),
-            yaxis=dict(showgrid=True, gridcolor='#e2e8f0', title="Nombre d'admissions"),
+            yaxis=dict(showgrid=True, gridcolor='#E8E0D5', title="Nombre d'admissions"),
             margin=dict(l=20, r=20, t=20, b=20),
             height=300
         )
@@ -423,9 +423,9 @@ def register_callbacks(app, df):
             showlegend=True,
             plot_bgcolor='rgba(0,0,0,0)',
             paper_bgcolor='rgba(0,0,0,0)',
-            font=dict(color='#2d3748', size=12),
-            xaxis=dict(showgrid=True, gridcolor='#e2e8f0', title='Durée de Séjour (jours)'),
-            yaxis=dict(showgrid=True, gridcolor='#e2e8f0', title='Coût (€)'),
+            font=dict(color='#3D5247', size=12),
+            xaxis=dict(showgrid=True, gridcolor='#E8E0D5', title='Durée de Séjour (jours)'),
+            yaxis=dict(showgrid=True, gridcolor='#E8E0D5', title='Coût (€)'),
             legend=dict(title='Département', orientation='v'),
             margin=dict(l=20, r=20, t=20, b=20),
             height=400
@@ -449,25 +449,25 @@ def register_callbacks(app, df):
             y=flux_data['Admissions'],
             mode='lines+markers',
             name='Admissions',
-            line=dict(color='#667eea', width=3),
-            marker=dict(size=8, color='#667eea')
+            line=dict(color='#0E6B45', width=3),
+            marker=dict(size=8, color='#0E6B45')
         ))
         fig_flux.add_trace(go.Scatter(
             x=flux_data['Mois'],
             y=flux_data['Sorties'],
             mode='lines+markers',
             name='Sorties',
-            line=dict(color='#43e97b', width=3),
-            marker=dict(size=8, color='#43e97b')
+            line=dict(color='#B8860B', width=3),
+            marker=dict(size=8, color='#B8860B')
         ))
         
         fig_flux.update_layout(
             showlegend=True,
             plot_bgcolor='rgba(0,0,0,0)',
             paper_bgcolor='rgba(0,0,0,0)',
-            font=dict(color='#2d3748', size=12),
+            font=dict(color='#3D5247', size=12),
             xaxis=dict(showgrid=False, title='Mois'),
-            yaxis=dict(showgrid=True, gridcolor='#e2e8f0', title='Nombre de patients'),
+            yaxis=dict(showgrid=True, gridcolor='#E8E0D5', title='Nombre de patients'),
             legend=dict(orientation='h', yanchor='bottom', y=1.02, xanchor='right', x=1),
             margin=dict(l=20, r=20, t=40, b=20),
             height=300,
@@ -496,9 +496,9 @@ def register_callbacks(app, df):
             showlegend=False,
             plot_bgcolor='rgba(0,0,0,0)',
             paper_bgcolor='rgba(0,0,0,0)',
-            font=dict(color='#2d3748', size=12),
+            font=dict(color='#3D5247', size=12),
             xaxis=dict(showgrid=False, title='Jour de la semaine'),
-            yaxis=dict(showgrid=True, gridcolor='#e2e8f0', title='Nombre de sorties'),
+            yaxis=dict(showgrid=True, gridcolor='#E8E0D5', title='Nombre de sorties'),
             margin=dict(l=20, r=20, t=20, b=20),
             height=300
         )
@@ -593,66 +593,332 @@ def register_callbacks(app, df):
                                      (filtered_df['Age'] <= age_range[1])]
         
         # Générer statistiques
-        stats_html = f"""
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>Rapport DATA CARE - {datetime.now().strftime('%d/%m/%Y %H:%M')}</title>
-            <style>
-                body {{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-                       margin: 40px; background: #f5f5f5; }}
-                .header {{ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                          color: white; padding: 30px; border-radius: 10px; text-align: center; }}
-                .stats {{ display: grid; grid-template-columns: repeat(4, 1fr); 
-                         gap: 20px; margin: 30px 0; }}
-                .stat-card {{ background: white; padding: 20px; border-radius: 10px; 
-                             box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center; }}
-                .stat-value {{ font-size: 32px; font-weight: bold; color: #667eea; }}
-                .stat-label {{ color: #666; margin-top: 10px; }}
-                table {{ width: 100%; border-collapse: collapse; background: white; 
-                        border-radius: 10px; overflow: hidden; margin-top: 20px; }}
-                th {{ background: #667eea; color: white; padding: 15px; text-align: left; }}
-                td {{ padding: 12px; border-bottom: 1px solid #eee; }}
-                tr:hover {{ background: #f9f9f9; }}
-                .footer {{ text-align: center; margin-top: 40px; color: #666; }}
-            </style>
-        </head>
-        <body>
-            <div class="header">
-                <h1>📊 RAPPORT DATA CARE</h1>
-                <p>Analyse des Données Hospitalières</p>
-                <p>Généré le {datetime.now().strftime('%d/%m/%Y à %H:%M:%S')}</p>
-            </div>
-            
-            <div class="stats">
-                <div class="stat-card">
-                    <div class="stat-value">{len(filtered_df)}</div>
-                    <div class="stat-label">👥 Patients</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">{filtered_df['DureeSejour'].mean():.1f}</div>
-                    <div class="stat-label">📅 Durée Moyenne (jours)</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">{filtered_df['Cout'].mean():,.0f}€</div>
-                    <div class="stat-label">💶 Coût Moyen</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">{filtered_df['Cout'].sum():,.0f}€</div>
-                    <div class="stat-label">💰 Coût Total</div>
-                </div>
-            </div>
-            
-            <h2>📋 Données Détaillées</h2>
-            {filtered_df.to_html(index=False, classes='data-table')}
-            
-            <div class="footer">
-                <p>© 2025 DATA CARE - Optimizing Patient Care with Data Intelligence</p>
-            </div>
-        </body>
-        </html>
-        """
+        # Calculs pour le rapport
+        top_dept = filtered_df['Departement'].value_counts().index[0] if len(filtered_df) > 0 else "—"
+        top_disease = filtered_df['Maladie'].value_counts().index[0] if len(filtered_df) > 0 else "—"
+        dept_stats = filtered_df.groupby('Departement').agg(
+            Patients=('PatientID','count'),
+            Cout_Moyen=('Cout','mean'),
+            Duree_Moy=('DureeSejour','mean')
+        ).reset_index().sort_values('Patients', ascending=False)
+
+        dept_rows = ""
+        for _, row in dept_stats.iterrows():
+            dept_rows += f"""
+            <tr>
+                <td><strong>{row['Departement']}</strong></td>
+                <td style="text-align:center">{int(row['Patients'])}</td>
+                <td style="text-align:center">{row['Cout_Moyen']:,.0f} €</td>
+                <td style="text-align:center">{row['Duree_Moy']:.1f} j</td>
+            </tr>"""
+
+        stats_html = f"""<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rapport DATA CARE — {datetime.now().strftime('%d/%m/%Y')}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {{
+      --forest:   #0B4D32;
+      --forest2:  #0E6B45;
+      --gold:     #B8860B;
+      --gold2:    #E8A320;
+      --clay:     #8B4513;
+      --sage:     #4A7C59;
+      --ivory:    #F7F3EE;
+      --ivory2:   #EDE7DC;
+      --border:   #D4C9BB;
+      --text:     #1C2820;
+      --textm:    #7A9080;
+    }}
+    *, *::before, *::after {{ margin:0; padding:0; box-sizing:border-box; }}
+    body {{
+      font-family: 'Outfit', sans-serif;
+      background: var(--ivory);
+      color: var(--text);
+      min-height: 100vh;
+    }}
+
+    /* ── HEADER ── */
+    .report-header {{
+      background: var(--forest);
+      padding: 48px 60px 40px;
+      position: relative;
+      overflow: hidden;
+    }}
+    .report-header::before {{
+      content: '';
+      position: absolute;
+      right: -60px; top: -60px;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: rgba(184,134,11,0.08);
+    }}
+    .report-header::after {{
+      content: '';
+      position: absolute;
+      right: 80px; top: -90px;
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: rgba(232,163,32,0.05);
+    }}
+    .header-badge {{
+      display: inline-block;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.70);
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 2px; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 20px;
+      margin-bottom: 18px;
+    }}
+    .report-title {{
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 52px; font-weight: 700;
+      color: white; line-height: 1;
+      margin-bottom: 10px;
+    }}
+    .report-title em {{ font-style: italic; color: var(--gold2); }}
+    .report-subtitle {{
+      font-size: 13px; color: rgba(255,255,255,0.50);
+      text-transform: uppercase; letter-spacing: 1.5px;
+      font-weight: 400; margin-bottom: 6px;
+    }}
+    .report-date {{
+      font-size: 13px; color: rgba(255,255,255,0.40);
+      font-weight: 300;
+    }}
+
+    /* ── BODY ── */
+    .report-body {{ padding: 40px 60px 60px; max-width: 1100px; margin: 0 auto; }}
+
+    /* ── KPIs ── */
+    .kpi-grid {{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin: 36px 0;
+    }}
+    .kpi-card {{
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px 18px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(11,77,50,0.07);
+      transition: all .25s;
+    }}
+    .kpi-card::before {{
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }}
+    .kpi-card:hover {{ box-shadow: 0 6px 28px rgba(11,77,50,0.13); }}
+    .kpi-card.k1::before {{ background: var(--forest2); }}
+    .kpi-card.k2::before {{ background: var(--gold); }}
+    .kpi-card.k3::before {{ background: var(--sage); }}
+    .kpi-card.k4::before {{ background: var(--clay); }}
+    .kpi-val {{
+      font-size: 30px; font-weight: 700;
+      line-height: 1; letter-spacing: -0.5px;
+    }}
+    .kpi-card.k1 .kpi-val {{ color: var(--forest); }}
+    .kpi-card.k2 .kpi-val {{ color: var(--gold); }}
+    .kpi-card.k3 .kpi-val {{ color: var(--sage); }}
+    .kpi-card.k4 .kpi-val {{ color: var(--clay); }}
+    .kpi-lbl {{
+      font-size: 10px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1px;
+      color: var(--textm); margin-top: 6px;
+    }}
+
+    /* ── SECTION TITLE ── */
+    .section-title {{
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px; font-weight: 700;
+      color: var(--forest);
+      margin: 36px 0 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 10px;
+    }}
+    .section-title::before {{
+      content: '';
+      width: 4px; height: 24px;
+      background: linear-gradient(180deg, var(--forest2), var(--gold));
+      border-radius: 2px;
+      flex-shrink: 0;
+    }}
+
+    /* ── TABLE ── */
+    .data-table {{
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(11,77,50,0.07);
+      font-size: 13px;
+    }}
+    .data-table thead tr {{
+      background: var(--forest);
+    }}
+    .data-table th {{
+      color: rgba(255,255,255,0.85);
+      padding: 13px 16px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border: none;
+    }}
+    .data-table td {{
+      padding: 11px 16px;
+      border-bottom: 1px solid var(--ivory2);
+      color: var(--text);
+    }}
+    .data-table tbody tr:last-child td {{ border-bottom: none; }}
+    .data-table tbody tr:nth-child(even) {{ background: var(--ivory); }}
+    .data-table tbody tr:hover {{ background: rgba(14,107,69,0.04); }}
+
+    /* ── DEPT SUMMARY ── */
+    .dept-table {{
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(11,77,50,0.07);
+      font-size: 13px;
+    }}
+    .dept-table th {{
+      background: var(--forest2);
+      color: rgba(255,255,255,0.85);
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }}
+    .dept-table td {{
+      padding: 11px 16px;
+      border-bottom: 1px solid var(--ivory2);
+    }}
+    .dept-table tbody tr:nth-child(even) {{ background: var(--ivory); }}
+    .dept-table tbody tr:hover {{ background: rgba(14,107,69,0.04); }}
+
+    /* ── HIGHLIGHT BOX ── */
+    .highlight-box {{
+      background: white;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--gold);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 24px;
+      font-size: 13px;
+      color: var(--text);
+      box-shadow: 0 2px 12px rgba(11,77,50,0.05);
+    }}
+    .highlight-box strong {{ color: var(--gold); }}
+
+    /* ── FOOTER ── */
+    .report-footer {{
+      background: var(--forest);
+      padding: 22px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 60px;
+    }}
+    .footer-brand {{
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px; font-weight: 700;
+      color: rgba(255,255,255,0.80);
+    }}
+    .footer-brand em {{ font-style: italic; color: var(--gold2); }}
+    .footer-copy {{
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.5px;
+    }}
+
+    @media print {{
+      body {{ background: white; }}
+      .report-header {{ -webkit-print-color-adjust: exact; print-color-adjust: exact; }}
+    }}
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="report-header">
+    <div class="header-badge">Rapport Hospitalier</div>
+    <div class="report-title"><em>Data</em> Care</div>
+    <div class="report-subtitle">Analyse des Données Hospitalières</div>
+    <div class="report-date">Généré le {datetime.now().strftime('%d/%m/%Y à %H:%M:%S')}</div>
+  </div>
+
+  <!-- BODY -->
+  <div class="report-body">
+
+    <!-- HIGHLIGHT -->
+    <div class="highlight-box" style="margin-top:32px">
+      Département le plus actif : <strong>{top_dept}</strong> &nbsp;·&nbsp;
+      Pathologie dominante : <strong>{top_disease}</strong> &nbsp;·&nbsp;
+      Période d'analyse : données complètes filtrées
+    </div>
+
+    <!-- KPIs -->
+    <div class="kpi-grid">
+      <div class="kpi-card k1">
+        <div class="kpi-val">{len(filtered_df):,}</div>
+        <div class="kpi-lbl">👥 Patients analysés</div>
+      </div>
+      <div class="kpi-card k2">
+        <div class="kpi-val">{filtered_df['DureeSejour'].mean():.1f} j</div>
+        <div class="kpi-lbl">📅 Durée moyenne</div>
+      </div>
+      <div class="kpi-card k3">
+        <div class="kpi-val">{filtered_df['Cout'].mean():,.0f} €</div>
+        <div class="kpi-lbl">💶 Coût moyen</div>
+      </div>
+      <div class="kpi-card k4">
+        <div class="kpi-val">{filtered_df['Cout'].sum():,.0f} €</div>
+        <div class="kpi-lbl">💰 Coût total</div>
+      </div>
+    </div>
+
+    <!-- RESUME PAR DEPT -->
+    <div class="section-title">Résumé par Département</div>
+    <table class="dept-table">
+      <thead><tr>
+        <th>Département</th>
+        <th style="text-align:center">Patients</th>
+        <th style="text-align:center">Coût Moyen</th>
+        <th style="text-align:center">Durée Moy.</th>
+      </tr></thead>
+      <tbody>{dept_rows}</tbody>
+    </table>
+
+    <!-- DONNEES COMPLETES -->
+    <div class="section-title">Données Complètes des Patients</div>
+    {filtered_df.to_html(index=False, classes='data-table', border=0)}
+
+  </div><!-- /report-body -->
+
+  <!-- FOOTER -->
+  <div class="report-footer">
+    <div class="footer-brand"><em>Data</em> Care</div>
+    <div class="footer-copy">© 2025 DATA CARE — Optimizing Patient Care with Data Intelligence</div>
+  </div>
+
+</body>
+</html>"""
         
         return dict(content=stats_html, 
                    filename=f"rapport_hospital_{datetime.now().strftime('%Y%m%d_%H%M%S')}.html")
@@ -701,77 +967,124 @@ def register_callbacks(app, df):
             doc = SimpleDocTemplate(buffer, pagesize=A4)
             elements = []
             
-            # Styles
+            # Styles — palette Clinique Naturelle
             styles = getSampleStyleSheet()
+            
+            FOREST  = colors.HexColor('#0B4D32')
+            FOREST2 = colors.HexColor('#0E6B45')
+            GOLD    = colors.HexColor('#B8860B')
+            GOLD2   = colors.HexColor('#E8A320')
+            CLAY    = colors.HexColor('#8B4513')
+            SAGE    = colors.HexColor('#4A7C59')
+            IVORY   = colors.HexColor('#F7F3EE')
+            IVORY2  = colors.HexColor('#EDE7DC')
+            TEXT    = colors.HexColor('#1C2820')
+            TEXTM   = colors.HexColor('#7A9080')
+
             title_style = ParagraphStyle(
                 'CustomTitle',
                 parent=styles['Heading1'],
-                fontSize=24,
-                textColor=colors.HexColor('#667eea'),
-                spaceAfter=30,
-                alignment=TA_CENTER
+                fontSize=28,
+                textColor=FOREST,
+                spaceAfter=6,
+                alignment=TA_CENTER,
+                fontName='Helvetica-Bold'
+            )
+            subtitle_style = ParagraphStyle(
+                'Subtitle',
+                parent=styles['Normal'],
+                fontSize=11,
+                textColor=TEXTM,
+                spaceAfter=24,
+                alignment=TA_CENTER,
+            )
+            section_style = ParagraphStyle(
+                'Section',
+                parent=styles['Heading2'],
+                fontSize=14,
+                textColor=FOREST2,
+                spaceBefore=18,
+                spaceAfter=10,
+                fontName='Helvetica-Bold'
             )
             
-            # Titre
-            elements.append(Paragraph("RAPPORT DATA CARE", title_style))
-            elements.append(Paragraph(f"Généré le {datetime.now().strftime('%d/%m/%Y à %H:%M:%S')}", 
-                                     styles['Normal']))
-            elements.append(Spacer(1, 0.3*inch))
-            
-            # Statistiques
-            stats_data = [
-                ['Indicateur', 'Valeur'],
-                ['Nombre de patients', f"{len(filtered_df)}"],
-                ['Durée moyenne (jours)', f"{filtered_df['DureeSejour'].mean():.1f}"],
-                ['Coût moyen (€)', f"{filtered_df['Cout'].mean():,.0f}"],
-                ['Coût total (€)', f"{filtered_df['Cout'].sum():,.0f}"]
-            ]
-            
-            stats_table = Table(stats_data, colWidths=[3*inch, 2*inch])
-            stats_table.setStyle(TableStyle([
-                ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#667eea')),
-                ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
-                ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
-                ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
-                ('FONTSIZE', (0, 0), (-1, 0), 12),
-                ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
-                ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
-                ('GRID', (0, 0), (-1, -1), 1, colors.black)
-            ]))
-            
-            elements.append(stats_table)
-            elements.append(Spacer(1, 0.5*inch))
-            
-            # Tableau de données (limité aux 50 premières lignes pour le PDF)
-            elements.append(Paragraph("Données (50 premières lignes)", styles['Heading2']))
+            # ── Titre ──
+            elements.append(Paragraph("DATA CARE", title_style))
+            elements.append(Paragraph(
+                f"Rapport Hospitalier · Généré le {datetime.now().strftime('%d/%m/%Y à %H:%M:%S')}",
+                subtitle_style
+            ))
             elements.append(Spacer(1, 0.2*inch))
             
-            # Sélectionner quelques colonnes clés
-            df_pdf = filtered_df[['PatientID', 'Age', 'Sexe', 'Departement', 'Maladie', 
-                                 'DureeSejour', 'Cout']].head(50)
+            # ── Ligne décorative ──
+            from reportlab.platypus import HRFlowable
+            elements.append(HRFlowable(width="100%", thickness=2, color=FOREST2, spaceAfter=16))
             
-            # Convertir en liste pour le tableau
+            # ── KPIs ──
+            elements.append(Paragraph("Indicateurs Clés", section_style))
+            stats_data = [
+                ['Indicateur', 'Valeur'],
+                ['👥  Patients analysés',  f"{len(filtered_df):,}"],
+                ['📅  Durée moyenne',       f"{filtered_df['DureeSejour'].mean():.1f} jours"],
+                ['💶  Coût moyen',          f"{filtered_df['Cout'].mean():,.0f} €"],
+                ['💰  Coût total',          f"{filtered_df['Cout'].sum():,.0f} €"],
+            ]
+            stats_table = Table(stats_data, colWidths=[3.5*inch, 2.5*inch])
+            stats_table.setStyle(TableStyle([
+                ('BACKGROUND',   (0,0), (-1,0),  FOREST),
+                ('TEXTCOLOR',    (0,0), (-1,0),  colors.white),
+                ('FONTNAME',     (0,0), (-1,0),  'Helvetica-Bold'),
+                ('FONTSIZE',     (0,0), (-1,0),  10),
+                ('ALIGN',        (0,0), (-1,-1), 'LEFT'),
+                ('PADDING',      (0,0), (-1,-1), 10),
+                ('BACKGROUND',   (0,1), (-1,1),  IVORY),
+                ('BACKGROUND',   (0,2), (-1,2),  colors.white),
+                ('BACKGROUND',   (0,3), (-1,3),  IVORY),
+                ('BACKGROUND',   (0,4), (-1,4),  colors.white),
+                ('TEXTCOLOR',    (1,1), (1,1),   FOREST2),
+                ('TEXTCOLOR',    (1,2), (1,2),   GOLD),
+                ('TEXTCOLOR',    (1,3), (1,3),   SAGE),
+                ('TEXTCOLOR',    (1,4), (1,4),   CLAY),
+                ('FONTNAME',     (1,1), (1,-1),  'Helvetica-Bold'),
+                ('FONTSIZE',     (1,1), (1,-1),  12),
+                ('GRID',         (0,0), (-1,-1), 0.5, IVORY2),
+                ('ROUNDEDCORNERS', [4]),
+            ]))
+            elements.append(stats_table)
+            elements.append(Spacer(1, 0.3*inch))
+            
+            # ── Données patients ──
+            elements.append(HRFlowable(width="100%", thickness=1, color=IVORY2, spaceAfter=10))
+            elements.append(Paragraph("Données Patients (50 premières lignes)", section_style))
+            elements.append(Spacer(1, 0.1*inch))
+            
+            df_pdf = filtered_df[['PatientID', 'Age', 'Sexe', 'Departement', 'Maladie',
+                                  'DureeSejour', 'Cout']].head(50)
             data = [df_pdf.columns.tolist()] + df_pdf.values.tolist()
             
             table = Table(data, repeatRows=1)
             table.setStyle(TableStyle([
-                ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#667eea')),
-                ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
-                ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-                ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
-                ('FONTSIZE', (0, 0), (-1, 0), 8),
-                ('FONTSIZE', (0, 1), (-1, -1), 7),
-                ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
-                ('BACKGROUND', (0, 1), (-1, -1), colors.white),
-                ('GRID', (0, 0), (-1, -1), 0.5, colors.grey)
+                ('BACKGROUND',  (0,0),  (-1,0),  FOREST),
+                ('TEXTCOLOR',   (0,0),  (-1,0),  colors.white),
+                ('FONTNAME',    (0,0),  (-1,0),  'Helvetica-Bold'),
+                ('FONTSIZE',    (0,0),  (-1,0),  8),
+                ('ALIGN',       (0,0),  (-1,-1), 'CENTER'),
+                ('PADDING',     (0,0),  (-1,-1), 6),
+                ('FONTSIZE',    (0,1),  (-1,-1), 7),
+                ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, IVORY]),
+                ('GRID',        (0,0),  (-1,-1), 0.4, IVORY2),
+                ('TEXTCOLOR',   (0,1),  (-1,-1), TEXT),
             ]))
-            
             elements.append(table)
             
-            # Footer
-            elements.append(Spacer(1, 0.5*inch))
-            elements.append(Paragraph("© 2025 DATA CARE - Optimizing Patient Care with Data Intelligence", 
-                                     styles['Normal']))
+            # ── Footer ──
+            elements.append(Spacer(1, 0.4*inch))
+            elements.append(HRFlowable(width="100%", thickness=1, color=FOREST2, spaceAfter=10))
+            elements.append(Paragraph(
+                "© 2025 DATA CARE — Optimizing Patient Care with Data Intelligence",
+                ParagraphStyle('Footer', parent=styles['Normal'],
+                               fontSize=9, textColor=TEXTM, alignment=TA_CENTER)
+            ))
             
             # Construire le PDF
             doc.build(elements)
