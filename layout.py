@@ -355,10 +355,11 @@ def create_layout():
         dbc.Row([
             dbc.Col([
                 html.Div([
-                    html.P("© 2025 DATA CARE - Optimizing Patient Care with Data Intelligence", 
+                    html.P("Par Sona.K © 2025 DATA CARE - Optimizing Patient Care with Data Intelligence", 
                            className='footer-text')
                 ], className='footer')
             ], width=12)
         ])
         
+
     ], fluid=True, className='main-container')
